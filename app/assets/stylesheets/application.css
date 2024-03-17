@@ -1,23 +1,63 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS (and SCSS, if configured) file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+/* Letters Styling */
+.letters {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
 
- .letters li {
-  background-color: #e0b012;
+.letters li {
+  background-color: #cfa51b;
   color: white;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
-  padding: 4px 12px;
-  display: inline;
+  padding: 8px 16px;
+  display: inline-block;
+  margin: 4px;
+  border-radius: 4px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Container Styling */
+.container {
+  box-shadow: 2px 2px 1px rgba(158, 156, 156, 0.79);
+  padding: 20px;
+  width: 80%;
+  margin: 0 auto;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+/* Result Page Styling */
+p {
+  margin-bottom: 10px;
+}
+
+.valid {
+  color: green;
+}
+
+.invalid {
+  color: red;
+}
+
+.word {
+  font-weight: bold;
+}
+
+/* Link Styling */
+a {
+  color: #cfa51b;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
 }
